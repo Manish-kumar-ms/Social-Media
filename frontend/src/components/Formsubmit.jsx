@@ -81,45 +81,53 @@ const Formsubmit = () => {
 
     
   return (
-    <div>
-      <h1>Form Submission</h1>
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="bg-white p-6 rounded-2xl shadow-md w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-6 text-center text-gray-700">Form Submission</h1>
 
-      <form onSubmit={handlesubmit} >
-
-        <div>
-        <label htmlFor="name">Name :</label>
-        <input  onChange={handleChange}
-         type="text"
-        name='name'
-        placeholder='enter your name'
-        value={submitInfo.name}
+    <form onSubmit={handlesubmit} class="space-y-4">
+      <div>
+        <label htmlFor="name" class="block text-gray-600 font-medium mb-1">Name:</label>
+        <input
+          onChange={handleChange}
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          value={submitInfo.name}
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        </div>
+      </div>
 
-        <div>
-        <label htmlFor="socialhandle">socialhandle :</label>
-        <input  onChange={handleChange} type="text"
-        name='socialhandle'
-        placeholder='enter your socialhandle name'
-        value={submitInfo.socialhandle}
+      <div>
+        <label htmlFor="socialhandle" class="block text-gray-600 font-medium mb-1">Social Handle:</label>
+        <input
+          onChange={handleChange}
+          type="text"
+          name="socialhandle"
+          placeholder="Enter your social handle"
+          value={submitInfo.socialhandle}
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        </div>
+      </div>
 
-        <div>
-        <label  htmlFor="image">Image :</label>
-        <input    type="file"
-        name='image'
-        multiple
-        onChange={handleFileChange} 
+      <div>
+        <label htmlFor="image" class="block text-gray-600 font-medium mb-1">Image:</label>
+        <input
+          type="file"
+          name="image"
+          multiple
+          onChange={handleFileChange}
+          class="w-full text-gray-600 border border-gray-300 rounded-lg file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:bg-blue-500 file:text-white hover:file:bg-blue-600"
         />
-        
-        </div>
+      </div>
 
-        <button>Submit</button>
-       
-      </form>
-  <ToastContainer/>
-    </div>
+      <button class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600 transition duration-300">Submit</button>
+    </form>
+
+    <ToastContainer />
+  </div>
+</div>
+
   )
 }
 
