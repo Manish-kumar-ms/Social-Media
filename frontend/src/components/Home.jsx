@@ -18,7 +18,7 @@ const Home = () => {
 
     const fetchForm=async ()=>{
     try {
-        const url='http://localhost:8000/form/getallsubmission'
+        const url='https://social-media-1-50hs.onrender.com/form/getallsubmission'
 
         const headers={
          

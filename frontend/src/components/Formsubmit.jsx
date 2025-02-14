@@ -35,7 +35,7 @@ const Formsubmit = () => {
       }
 
       try {
-        const url="http://localhost:8000/form/formsubmission"
+        const url="https://social-media-1-50hs.onrender.com/form/formsubmission"
 
          // Create FormData to send file along with other fields
       const formData = new FormData();

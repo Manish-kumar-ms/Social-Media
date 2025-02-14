@@ -25,7 +25,7 @@ const Signup = () => {
       }
 
       try {
-      const url="http://localhost:8000/auth/signup"
+      const url="https://social-media-1-50hs.onrender.com/auth/signup"
      
       const response=await fetch(url,{
         method:"POST",

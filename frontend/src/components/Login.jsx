@@ -28,7 +28,7 @@ const Login = () => {
 
         try {
 
-        const url="http://localhost:8000/auth/login"
+        const url="https://social-media-1-50hs.onrender.com/auth/login"
         const response=await fetch(url,{
           method:"POST",
           headers:{
